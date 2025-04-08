@@ -26,7 +26,7 @@ pip install pharma-pubmed-fetcher
 ### From Source
 
 ```bash
-git clone https://github.com/yourusername/pharma-pubmed-fetcher.git
+git clone https://github.com/Prerana-03/pharma-pubmed-fetcher
 cd pharma-pubmed-fetcher
 poetry install
 ```
