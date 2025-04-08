@@ -117,7 +117,7 @@ The package is organized as follows:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/pharma-pubmed-fetcher.git
+git clone https://github.com/Prerana-03/pharma-pubmed-fetcher
 cd pharma-pubmed-fetcher
 ```
 
