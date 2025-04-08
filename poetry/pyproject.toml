@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "pharma-pubmed-fetcher"
+version = "0.1.0"
+description = "A Python package to fetch research papers from PubMed based on user-defined queries"
+authors = ["PubMed Fetcher Team <your.email@example.com>"]
+readme = "README.md"
+repository = "https://github.com/yourusername/pubmed-fetcher"
+license = "MIT"
+packages = [{include = "pubmed_fetcher"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+biopython = "^1.81"
+click = "^8.1.3"
+pandas = "^2.0.0"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+black = "^23.3.0"
+isort = "^5.12.0"
+flake8 = "^6.0.0"
+mypy = "^1.3.0"
+
+[tool.poetry.scripts]
+get-papers-list = "pubmed_fetcher.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3

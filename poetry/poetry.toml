@@ -1,0 +1,13 @@
+[[tool.poetry.source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+priority = "primary"
+
+[[tool.poetry.source]]
+name = "testpypi"
+url = "https://test.pypi.org/simple"
+priority = "supplemental"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api" 
